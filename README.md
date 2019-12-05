@@ -1,4 +1,4 @@
-# AkropolisOS Frontend (active development)
+# Frontend starter kit for Ethereum DApps (active development)
 
 - ```npm i``` install frontend and contracts dependencies
 - ```npm run dev``` start locally in watch mode
@@ -6,3 +6,4 @@
 - ```npm run build``` build production (see `build` folder)
 - ```npm lint``` start code style linting and type checking
 - ```npm test``` or ```npm t``` start test
+- ```npm run deploy``` build production and deploy to gh-pages
