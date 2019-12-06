@@ -10,52 +10,51 @@
 - ```npm test``` or ```npm t``` start test
 - ```npm run deploy``` build production and deploy to gh-pages
 
-## О стартерките
+## About starter kit
 
-Данный стартеркит предназначен для разработки фронтенда на базе эфировских смарт-контрактов и сабграфов TheGraph.
+This starter kit is intended for frontend development based on Ethereum smart-contracts and subgraphs of [TheGraph](https://thegraph.com/).
 
-Особенности стартер кита:
+Starter kit features:
+- Interface build library [React](https://github.com/facebook/react)
+- Project build with [Webpack](https://webpack.js.org/)
+- Boilerplate code generation with [graphql-codegen](https://github.com/dotansimha/graphql-code-generator) and [typechain](https://github.com/ethereum-ts/TypeChain)
+- Deploy in gh-pages
+- Several basic features implemented
+  - Connection to the wallets
+  - Sent transaction notification show up
+  - Multilingual
+  - Form building components
 
-- библиотека для построения интерфейсов `React`
-- сборка проекта с помощью `webpack`
-- кодогенерация бойлерплейта с помощью `graphql-codegen` и `typechain`
-- деплой в gh-pages
-- реализованы некоторые базовые фичи
-  - подключение к кошелькам
-  - отображение нотификаций по отправленным транзакциям
-  - мультиязычность
-  - компоненты для построения форм
-
-## Структура
+## Structure
 
 ### src/core
 
-Содержит корневой компонент, который инициализирует нужные зависимости и подключает нужные контекст провайдеры
+Contains root component, which initializes right dependencies and connects right context-providers
 
 ### src/app
 
-Содержит страницы приложения, базовый раутинг и навигацию
+Contains app pages, basic routing and navigation
 
 ### src/features
 
-Содержит фичи не привязанные к раутингу, могут быть использованы на страницах приложения
+Contains features not related to routing, can be used on app pages
 
 ### src/services
 
-Базовые сервисы приложения. Могут быть использованы в любом месте приложения
+App basic services. Can be used in any place of app.
 
 #### api
 
-Сервис отвечающий за коммуникацию с внешним миром, через него происходит чтение контрактов, отправка транзакций, коннект с кошельком
+Service interacted with external environment. Contracts reading, transactions sending, wallet connection are going through it
 
 #### apollo
 
-Сервис отвечающий за настройку Apollo
+Apollo setup service
 
 #### i18n
 
-Сервис отвечающий за интернационализацию
+Internationalization service
 
 ### utils
 
-Содержит хелперы, декораторы, форматеры, валидаторы, реакт-хуки и т.д.
+Contains helpers, decorators, formaters, validators, React-hooks, etc.
